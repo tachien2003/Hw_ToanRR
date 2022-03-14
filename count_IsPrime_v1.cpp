@@ -8,9 +8,10 @@ void count_isPrime(int n)
    bool check = true;
    if (n <= 1) check = false;
    for(int i = 2; i < n; i++)
-   { count ++;
-     if (n % i == 0) continue;
-     else check = false;
+   { 
+     count ++;
+     if (n % i == 0)
+      check = false;
    }
    if (check) cout << n << " is Prime number" << endl;
    else cout << n << " is not Prime number" << endl;
